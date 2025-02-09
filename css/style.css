@@ -10,9 +10,9 @@
     src: url(../fonts/Jost-Regular.ttf);
   }
 
-  body,
-  html {
-    font-family: Jost, sans-serif;
+  @font-face {
+    font-family: dms-serif-display;
+    src: url(../fonts/DMSerifDisplay-Regular.ttf);
   }
 
   .container {
@@ -24,12 +24,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 43px auto 45px auto;
+    font-family: 'Jost';
   }
 
   .links {
     max-width: fit-content;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     font-size: 20px;
     flex-wrap: wrap;
   }
@@ -42,4 +44,75 @@
     margin-top: 5px;
     max-width: 21px;
     max-height: 21px;
+  }
+
+  .container h1 {
+    font-family: 'dms-serif-display';
+    font-weight: 400;
+    font-size: 85px;
+    color: #292F36;
+    max-width: 567px;
+  }
+
+  .container p {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1%;
+    color: #4D5053;
+    font-family: 'Jost';
+    max-width: 567px;
+    margin: 9px 0 21px 0;
+  }
+
+  .description a {
+    font-family: 'Jost';
+    display: flex;
+    max-width: 150px;
+    background: #292F36;
+    box-shadow: 0px 10px 20px 0px #C0C0C059;
+    color: #fff;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .description {
+    max-width: 1200px;
+    margin: auto;
+    padding: 345px 0;
+  }
+
+  .sc1 {
+    background: url(../images/banner.png) no-repeat;
+    background-position: center;
+    max-width: 1920px;
+    min-height: 1042px;
+  }
+
+  .sc2 .main-box {
+    display: flex;
+    margin: 200px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .sc2 h3 {
+    text-align: center;
+    color: #292F36;
+    font-size: 25px;
+  }
+
+  .sc2 p {
+    max-width: 358px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .sc2 a {
+    display: flex;
+    color: #4D5053;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
   }
