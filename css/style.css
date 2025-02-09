@@ -1,0 +1,45 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url(../fonts/Jost-Regular.ttf);
+  }
+
+  body,
+  html {
+    font-family: Jost, sans-serif;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links {
+    max-width: fit-content;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    color: #000;
+  }
+
+  .links img {
+    margin-top: 5px;
+    max-width: 21px;
+    max-height: 21px;
+  }
