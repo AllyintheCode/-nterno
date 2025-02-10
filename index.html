@@ -17,7 +17,7 @@
             <img src="./images/Logo.svg" alt="">
           </a>
         </div>
-        <div class="links">
+        <div class="nav" id="nav">
           <a href="./index.html">Home</a>
           <a href="#">Pages</a>
           <a href="#">Services</a>
@@ -26,10 +26,12 @@
           <a href="#">Contact</a>
           <img src="./images/Search.png" alt="">
         </div>
+        <div class="bars" id="bars">
+          <img src="./images/bars-svgrepo-com.svg" id="barsImage" alt="bars" />
+        </div>
       </div>
     </div>
   </header>
-
   <main>
     <section class="sc1">
       <div class="container">
@@ -81,7 +83,52 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <section class="sc3">
+        <div class="boxes1">
+          <div class="box1">
+            <h2>
+              We Create The Art
+              Of Stylish Living
+              Stylishly
+            </h2>
+            <p>
+              It is a long established fact that a reader will be distracted by the of readable content of a page
+              when lookings at its layouts the points of using
+              that it has a more-or-less normal.
+            </p>
+          </div>
+          <div class="main-box">
+            <div class="img">
+              <img src="./images/Call Icon.png" alt="">
+            </div>
+            <div class="box2">
+              <h3>
+                012345678
+              </h3>
+              <p>
+                Call Us Anytime
+              </p>
+            </div>
+          </div>
+          <a href="#">Get Free Estimate</a>
+        </div>
+        <div class="boxes2">
+          <img src="./images/Image (2).png" alt="">
+        </div>
+    </div>
+    </section>
   </main>
+  <script>
+    bars.onclick = function () {
+      if (barsImage.src.includes("bars-svgrepo-com.svg")) {
+        barsImage.src = "./images/times-svgrepo-com.svg";
+      } else {
+        barsImage.src = "./images/bars-svgrepo-com.svg";
+      }
+      nav.classList.toggle("showMobileMenu");
+    } 
+  </script>
 </body>
 
 </html>
